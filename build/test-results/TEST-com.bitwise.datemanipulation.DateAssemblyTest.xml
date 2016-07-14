@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bitwise.datemanipulation.DateAssemblyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-02-29T13:07:56" hostname="HRPRDS" time="1.178">
+<testsuite name="com.bitwise.datemanipulation.DateAssemblyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-07-14T13:12:09" hostname="GLTDM11" time="1.241">
   <properties/>
-  <testcase name="itShouldPrintTheDateInRequiredFormat" classname="com.bitwise.datemanipulation.DateAssemblyTest" time="1.178"/>
+  <testcase name="itShouldPrintTheDateInRequiredFormat" classname="com.bitwise.datemanipulation.DateAssemblyTest" time="1.241"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[log4j:WARN No appenders could be found for logger (cascading.property.AppProps).
 log4j:WARN Please initialize the log4j system properly.

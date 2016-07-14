@@ -15,7 +15,7 @@ buildscript {
     }
 }
 task sayHello <<{
-    println 'Hey this is bitwise'
+    println '*********************************************************************************'
 }
 
 repositories {

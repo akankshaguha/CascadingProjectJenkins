@@ -1,16 +1,28 @@
-
+#!groovy
 stage 'setJAVA_HOME'
 node {
 
-     env.JAVA_HOME = "C:\\Program Files\\Java\\jdk1.8.0_45"
-   
+     env.JAVA_HOME = "C:\\Program Files\\Java\\jdk1.8.0_91"
+
      echo env.JAVA_HOME
 }
+stage 'CLONE CASCADING'
 node{
-git 'https://github.com/exorcist007/TDF-IDF-CascadingDateFormatConversion.git'
-bat 'gradle build --info'
+    git 'https://github.com/akankshaguha/CascadingProjectJenkins.git'
 }
+stage 'CLEAN PROJECT'
 node{
-git 'https://github.com/exorcist007/TDF-IDF-CascadingDateFormatConversion.git'
-bat 'gradle sayHello'
+     bat 'gradle clean'
+}
+stage 'BUILD PROJECT'
+node{
+     bat 'gradle build'
+}
+stage 'TEST'
+node{
+     bat 'gradle test'
+}
+stage 'RUN CUSTOM TASK'
+node{
+     bat 'gradle sayHello'
 }
